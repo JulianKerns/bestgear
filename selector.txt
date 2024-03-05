@@ -1,0 +1,194 @@
+Monk:
+	Brewmaster:
+		#guide-body > div:nth-child(37) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+		#guide-body > div:nth-child(37) > table > tbody > tr:nth-child(19) > td:nth-child(2) > a > span
+        table constains trinkets and extra weapons
+	Mistweaver:
+		#guide-body > div:nth-child(33) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+		#guide-body > div:nth-child(33) > table > tbody > tr:nth-child(16) > td:nth-child(2) > a > span
+        table contains trinkets
+	Windwalker:
+        #guide-body > div:nth-child(34) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(34) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        structured as Windwalker table
+
+Death knight:
+    Blood:
+        #guide-body > div:nth-child(37) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(37) > table > tbody > tr:nth-child(16) > td:nth-child(2) > a > span
+        contains trinkets
+    Frost:
+        #tab-ultimate-bis-lists-breath-of-sindragosa > div:nth-child(1) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #tab-ultimate-bis-lists-breath-of-sindragosa > div:nth-child(1) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        contains trinkets
+    Unholy:
+        #guide-body > div:nth-child(37) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(37) > table > tbody > tr:nth-child(16) > td:nth-child(2) > a > span
+        contains trinkets and extra weapons
+
+Mage:
+    Arcane:
+        #guide-body > div:nth-child(38) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(38) > table > tbody > tr:nth-child(16) > td:nth-child(2) > a > span
+        contains trinkets
+    Fire:
+        #guide-body > div:nth-child(50) > table > tbody > tr:nth-child(2) > td:nth-child(2) > span > a > span
+        #guide-body > div:nth-child(50) > table > tbody > tr:nth-child(16) > td:nth-child(2) > span > a > span
+        contains trinkets
+    Frost:
+        #guide-body > div:nth-child(32) > table > tbody > tr:nth-child(2) > td:nth-child(2) > span > a > span
+        #guide-body > div:nth-child(32) > table > tbody > tr:nth-child(18) > td:nth-child(2) > span > a > span
+        contains trinkets
+
+Rogue:
+    Assassination:
+        #guide-body > div:nth-child(33) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(33) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        contains trinkets
+    Outlaw:
+        #guide-body > div:nth-child(30) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(30) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        contains trinkets
+    Subtlety:
+        #guide-body > div:nth-child(35) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(35) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        contains trinkets
+
+Demon Hunter:
+    Havoc:
+        #guide-body > div:nth-child(40) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(40) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        contains trinkets
+    Vengeance:
+        #guide-body > div:nth-child(32) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(32) > table > tbody > tr:nth-child(19) > td:nth-child(2) > a > span
+        contains trinkets
+
+Shaman:
+    Elemental: 
+        #guide-body > div:nth-child(37) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(37) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        contains trinkets
+    Enhancement:
+        #guide-body > div:nth-child(45) > table > tbody > tr:nth-child(2) > td:nth-child(2) > span > a > span
+        #guide-body > div:nth-child(45) > table > tbody > tr:nth-child(19) > td:nth-child(2) > span > a > span
+        contains trinkets and extra weapons
+    Restoration:
+        #guide-body > div:nth-child(36) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(36) > table > tbody > tr:nth-child(18) > td:nth-child(2) > a > span
+        contains trinkets and extra weapons
+
+Druid:
+    Balance:
+        #guide-body > div:nth-child(37) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(37) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        contains trinkets
+    Feral:
+        #guide-body > div:nth-child(38) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(38) > table > tbody > tr:nth-child(14) > td:nth-child(2) > a > span
+        same as Windwalker
+    Guardian:
+        #guide-body > div:nth-child(36) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(36) > table > tbody > tr:nth-child(16) > td:nth-child(2) > a > span
+        contains trinkets
+    Restoration:
+        #guide-body > div:nth-child(34) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(34) > table > tbody > tr:nth-child(16) > td:nth-child(2) > a > span
+        contains trinkets
+Paladin:
+    Holy:
+        #guide-body > div:nth-child(29) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(29) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        contains trinkets and a shield
+    Protection:
+        #guide-body > div:nth-child(32) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(32) > table > tbody > tr:nth-child(15) > td:nth-child(2) > a > span
+        contains NO trinkets but a shield
+    Retribution:
+        #guide-body > div:nth-child(28) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(28) > table > tbody > tr:nth-child(14) > td:nth-child(2) > a > span
+        same as Windwalker
+
+Warlock:
+    Affliction:
+        #guide-body > div:nth-child(38) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(38) > table > tbody > tr:nth-child(18) > td:nth-child(2) > a > span
+        contains trinkets
+    Demonology:
+        #guide-body > div:nth-child(30) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(30) > table > tbody > tr:nth-child(18) > td:nth-child(2) > a > span
+        contains trinkets and extra weapons
+    Destruction:
+        #guide-body > div:nth-child(36) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(36) > table > tbody > tr:nth-child(18) > td:nth-child(2) > a > span
+        contains trinkets and extra weapons
+
+Evoker:
+    Devestation:
+        #guide-body > div:nth-child(56) > table > tbody > tr:nth-child(2) > td:nth-child(2) > span > a > span
+        #guide-body > div:nth-child(56) > table > tbody > tr:nth-child(17) > td:nth-child(2) > span > a > span
+        contains trinkets
+
+    Preservation:
+        #guide-body > div:nth-child(33) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(33) > table > tbody > tr:nth-child(16) > td:nth-child(2) > a > span
+        contains trinkets
+
+    Augmentation:
+        #guide-body > div:nth-child(40) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(40) > table > tbody > tr:nth-child(18) > td:nth-child(2) > a > span
+        contains trinkets
+
+Priest:
+    Discipline:
+        #guide-body > div:nth-child(33) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(33) > table > tbody > tr:nth-child(18) > td:nth-child(2) > a > span
+        contains trinkets
+    Holy:
+        #guide-body > div:nth-child(32) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(32) > table > tbody > tr:nth-child(18) > td:nth-child(2) > a > span
+        contains trinkets
+    Shadow:
+        #guide-body > div:nth-child(30) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(30) > table > tbody > tr:nth-child(18) > td:nth-child(2) > a > span
+        contains trinkets
+
+Warrior:
+    Arms:
+        #guide-body > div:nth-child(30) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(30) > table > tbody > tr:nth-child(16) > td:nth-child(2) > a > span
+        contains trinkets
+
+    Fury:
+        #guide-body > div:nth-child(31) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(31) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        contains trinkets
+    Protection:
+        #guide-body > div:nth-child(39) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(39) > table > tbody > tr:nth-child(19) > td:nth-child(2) > a > span
+        contains offensive and defensive trinkets and a shield
+
+Hunter:
+    Beast Mastery:
+        #guide-body > div:nth-child(35) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(35) > table > tbody > tr:nth-child(16) > td:nth-child(2) > a > span
+        contains trinkets
+
+    Marksmanship:
+        #guide-body > div:nth-child(35) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(35) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        contains trinkets
+
+    Survival:
+        #guide-body > div:nth-child(33) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(33) > table > tbody > tr:nth-child(16) > td:nth-child(2) > a > span
+        contains trinkets
+
+
+
+
+
+
+
+    
+
