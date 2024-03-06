@@ -9,7 +9,7 @@ Monk:
         table contains trinkets
 	Windwalker:
         #guide-body > div:nth-child(34) > table > tbody > tr:nth-child(2) > td:nth-child(2) > a > span
-        #guide-body > div:nth-child(34) > table > tbody > tr:nth-child(17) > td:nth-child(2) > a > span
+        #guide-body > div:nth-child(34) > table > tbody > tr:nth-child(14) > td:nth-child(2) > a > span
         structured as Windwalker table
 
 Death knight:

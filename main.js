@@ -1,6 +1,7 @@
 
 const{getInputData} = require('./input_data.js')
-const {scraping, scrapingHavoc} = require('./scraping.js')
+const {scraping} = require('./scraping.js')
+const {selector} = require('./selector.js')
 
 const item_slots = ["Head","Neck","Shoulder","Back","Chest","Waist","Wrist","Hands","Legs","Feet","Finger1","Finger2","Mainhand","Offhand"]
 async function main(){
@@ -31,30 +32,34 @@ async function main(){
             if(!data.gear.items[`${item.toLowerCase()}`]?.name){
                 continue
             }
-
             itemInfo.push(data.gear.items[`${item.toLowerCase()}`]?.name)
                
         }
-        // getting the scraped data back from scraping.js   
-        const scrapedData = await scrapingHavoc(data.class, data.active_spec_name)
+
+        // getting the scraped data back from scraping.js 
+        
+        console.log(selector[`${data.class}`][`${data.active_spec_name}`])
+        const scrapedData = await scraping(data.class, data.active_spec_name, selector[`${data.class}`][`${data.active_spec_name}`])
+         
         if(scrapedData === undefined){
            console.log(`Please restart the programm!`)
-            return
+            return null 
         }
 
         try{
         for(let i = 0; i < itemInfo.length; i++){
             if(itemInfo[i] === scrapedData[i]){
-                console.log(`Current ${item_slots[i]}-slot: Already acquired best in slot gear: ${itemInfo[i]}
+                console.log(`Current ${item_slots[i]}-slot. Already acquired best in slot gear: ${itemInfo[i]}
 ---`)    
             }else{
-                console.log(`Current ${item_slots[i]}-slot: is ${itemInfo[i]} Best in slot gear would be ${scrapedData[i]}
+                console.log(`Current ${item_slots[i]}-slot is ${itemInfo[i]}: Best in slot gear would be ${scrapedData[i]}
 ---`)
             }
 
         }
         }catch(err){
-            console.log(`${err.message}`)
+            console.log(`Error: ${err.message}`)
+            return null
 
     }
 }
