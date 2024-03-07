@@ -47,7 +47,7 @@ async function main(){
         }
 
         try{
-        for(let i = 0; i < itemInfo.length; i++){
+        for(let i = 0; i < scrapedData.length; i++){
             if(itemInfo[i] === scrapedData[i]){
                 console.log(`Current ${item_slots[i]}-slot. Already acquired best in slot gear: ${itemInfo[i]}
 ---`)    
