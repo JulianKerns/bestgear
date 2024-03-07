@@ -21,11 +21,11 @@ async function scraping(charClass, charSpec, selector){
     const page = await browser.newPage()
 
    // div:nth-child(34) is only workgin smoothly when trying to scrape data from the windwalker monk bis gear site, every site has a slightly different HTML structure
-    console.log(selector["load"])
-    console.log(selector["div"])
+   
+    console.log(`#guide-body > ${selector["div"]} > table > tbody > tr > td:nth-child(2) >${selector["span"]} a > span`)
     try{
-       
-        await Promise.all([page.goto(url), page.waitForSelector(`#guide-body`, {timeout: 20_000}),page.waitForSelector(`${selector["load"]}`, {timeout: 20_000})])
+        await page.goto(url,{waitUntil :'load'}),
+        await Promise.all([ page.waitForSelector(`#guide-body`, {timeout: 20_000}),page.waitForSelector(`${selector["load"]}`, {timeout: 20_000})])
         if(await page.$('#onetrust-reject-all-handler')){
             await page.click("#onetrust-reject-all-handler")
         }
@@ -35,14 +35,15 @@ async function scraping(charClass, charSpec, selector){
     },selector) 
         let i = 0
         while (bestgear.length === 0 && i < 20){
-        await Promise.all([page.goto(url), page.waitForSelector(`#guide-body`, {timeout: 20_000}), page.waitForSelector(`${selector["load"]}`, {timeout: 20_000})])
+        await page.goto(url,{waitUntil :'load'})   
+        await Promise.all([ page.waitForSelector(`#guide-body`, {timeout: 20_000}), page.waitForSelector(`${selector["load"]}`, {timeout: 20_000})])
         
         
         console.log('Could not scrape the data... Trying again!')
             i++
             
             bestgear = await page.evaluate((selector) => { 
-            return Array.from(document.querySelectorAll(`#guide-body > ${selector["div"]} > table > tbody > tr > td:nth-child(2) > a > span`)).map(x => x.textContent)
+            return Array.from(document.querySelectorAll(`${selector["all"]}`)).map(x => x.textContent)
             
         },selector)
 

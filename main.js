@@ -3,7 +3,7 @@ const{getInputData} = require('./input_data.js')
 const {scraping} = require('./scraping.js')
 const {selector} = require('./selector.js')
 
-const item_slots = ["Head","Neck","Shoulder","Back","Chest","Waist","Wrist","Hands","Legs","Feet","Finger1","Finger2","Mainhand","Offhand"]
+const item_slots = ["Head","Neck","Shoulder","Back","Chest","Wrist","Hands","Waist","Legs","Feet","Finger1","Finger2","Mainhand","Offhand"]
 async function main(){
      //getting the input data from the CLI arguments
         let inputDataRe = await getInputData()
