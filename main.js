@@ -2,9 +2,11 @@
 const{getInputData} = require('./input_data.js')
 const {scraping} = require('./scraping.js')
 const {selector} = require('./selector.js')
+const {printReport} = require('./report.js')
 
-const item_slots = ["Head","Neck","Shoulder","Back","Chest","Wrist","Hands","Waist","Legs","Feet","Finger1","Finger2","Mainhand","Offhand"]
+const item_slots = ["Head","Neck","Shoulder","Back","Chest","Wrist","Hands","Waist","Legs","Feet","Finger1","Finger2"]
 async function main(){
+
      //getting the input data from the CLI arguments
         let inputDataRe = await getInputData()
         if(inputDataRe === undefined){
@@ -37,30 +39,22 @@ async function main(){
         }
 
         // getting the scraped data back from scraping.js 
-        
-        console.log(selector[`${data.class}`][`${data.active_spec_name}`])
+        // from itemInfo.slice(13)
+       
         const scrapedData = await scraping(data.class, data.active_spec_name, selector[`${data.class}`][`${data.active_spec_name}`])
          
         if(scrapedData === undefined){
            console.log(`Please restart the programm!`)
             return null 
         }
-
+       
         try{
-        for(let i = 0; i < scrapedData.length; i++){
-            if(itemInfo[i] === scrapedData[i]){
-                console.log(`Current ${item_slots[i]}-slot. Already acquired best in slot gear: ${itemInfo[i]}
----`)    
-            }else{
-                console.log(`Current ${item_slots[i]}-slot is ${itemInfo[i]}: Best in slot gear would be ${scrapedData[i]}
----`)
-            }
+    
+            printReport(itemInfo,scrapedData)
 
-        }
         }catch(err){
             console.log(`Error: ${err.message}`)
             return null
-
     }
 }
 main()

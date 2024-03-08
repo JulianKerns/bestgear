@@ -4,8 +4,6 @@ const {stdin:input, stdout:output} =  require('node:process')
 const { resolve } = require('node:path')
 const rl = readline.createInterface({input, output})
 
-
-
 function getInputData(){
     let inputData = []
     const promise = new Promise((resolve) => {

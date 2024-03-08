@@ -23,7 +23,8 @@ const selector = {
         "Demon Hunter":{
             "Havoc" : {
                 div: 'div:nth-child(40)',
-                load: 'tr:nth-child(17)'
+                load: 'tr:nth-child(17)',
+                all : "#guide-body > div:nth-child(40) > table > tbody > tr > td:nth-child(2) > a > span"
             },
             "Vengeance": {
                 div: 'div:nth-child(32)',
@@ -89,7 +90,8 @@ const selector = {
             "Frost":{
                 div: 'div:nth-child(32)',
                 load: 'tr:nth-child(18)',
-                all :"#guide-body > div:nth-child(32) > table > tbody > tr > td:nth-child(2) > span > a > span"  
+                all :"#guide-body > div:nth-child(32) > table > tbody > tr > td:nth-child(2) > span > a > span",
+                
             },
             "Arcane": {
                 div: 'div:nth-child(38)',
