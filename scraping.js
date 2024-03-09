@@ -6,6 +6,7 @@ const {setTimeout} = require("node:timers/promises")
 
 
 async function scraping(charClass, charSpec, selector){
+    //Exceptions for a few spec names and class names 
     if (charClass === 'Death Knight'){
         charClass = 'death-knight' 
     }
@@ -15,7 +16,7 @@ async function scraping(charClass, charSpec, selector){
     if ( charSpec === 'Beast Mastery'){
         charSpec = 'beast-mastery'
     }
- //Exceptions for a few spec names and class names 
+ 
     let url = `https://www.wowhead.com/guide/classes/${charClass.toLowerCase()}/${charSpec.toLowerCase()}/bis-gear`
     console.log(`Scraping: ${url}...`)
     let bestgear = []
@@ -36,7 +37,7 @@ async function scraping(charClass, charSpec, selector){
         // trying again in the while loop if it does not work the first time
 
         let i = 0
-        while (bestgear.length === 0 && i < 5){
+        while (bestgear.length === 0 && i < 10){
             await page.goto(url,{waitUntil :'load'})   
             await Promise.all([page.waitForSelector(`#guide-body`, {timeout: 20_000}), page.waitForSelector(`${selector["load"]}`, {timeout: 20_000})])
             await setTimeout(1000)

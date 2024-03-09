@@ -27,7 +27,7 @@ Gear Comparison:
 
     }
     console.log(`----------------
-Comparison finished:
+Comparison finished!
 ---------------- `)
 }
 
